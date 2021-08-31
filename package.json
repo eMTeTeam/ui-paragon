@@ -1,13 +1,16 @@
 {
   "name": "website",
   "version": "1.0.0",
+   "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "ng": "ng",
-	"start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+	  "start": "node server.js",
+    "build": "ng build --aot --prod",
+    "postinstall": "ng build --aot --prod",
+    "dev_serve": "ng serve --open"
   },
   "private": true,
   "dependencies": {
@@ -20,12 +23,15 @@
     "@angular/platform-browser-dynamic": "~9.1.12",
     "@angular/router": "~9.1.12",
     "aos": "^2.3.4",
+    "express": "4.17.1",
+    "path": "0.12.7",
     "bootstrap": "^4.5.0",
     "ionicons": "^2.0.1",
     "jquery": "^3.5.1",
     "jump.js": "^1.0.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
+    "typescript": "3.5.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
