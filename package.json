@@ -1,13 +1,13 @@
 {
   "name": "website",
   "version": "1.0.0",
-   "engines": {
+  "engines": {
     "node": "10.15.1",
     "npm": "6.4.1"
   },
   "scripts": {
     "ng": "ng",
-	  "start": "node server.js",
+    "start": "node server.js",
     "build": "ng build --aot --prod",
     "postinstall": "ng build --aot --prod",
     "dev_serve": "ng serve --open"
@@ -31,7 +31,7 @@
     "jump.js": "^1.0.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "typescript": "3.5.3",
+    "typescript": "3.6.4",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
